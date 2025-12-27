@@ -35,4 +35,3 @@ The engine is composed of several key components:
 2.  **State Representation:** Defines how the game state and player performance are translated into an observable state for the RL agent.
 3.  **Action Space:** Defines the set of possible difficulty adjustments the RL agent can make.
 4.  **Reward Function:** A crucial component that defines what constitutes a "good" or "bad" difficulty adjustment. This is typically based on player engagement, performance, and desired challenge level.
-5.  **RL Agent:** The core learning algorithm (e.g., a Q-table, a neural network for DQN) that
