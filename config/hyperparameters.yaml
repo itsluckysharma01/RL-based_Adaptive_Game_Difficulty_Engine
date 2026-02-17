@@ -1,0 +1,34 @@
+# DQN Hyperparameters
+dqn:
+  learning_rate: 0.001
+  gamma: 0.99  # Discount factor
+  epsilon_start: 1.0
+  epsilon_min: 0.01
+  epsilon_decay: 0.995
+  batch_size: 64
+  memory_size: 10000
+  target_update: 10
+  hidden_size: 128
+
+# PPO Hyperparameters
+ppo:
+  learning_rate: 0.0003
+  gamma: 0.99
+  epsilon_clip: 0.2
+  k_epochs: 4
+  value_loss_coef: 0.5
+  entropy_coef: 0.01
+  hidden_size: 128
+
+# Training Configuration
+training:
+  episodes: 1000
+  max_steps: 500
+  save_frequency: 50
+  render: false
+
+# Environment Configuration
+environment:
+  state_size: 4  # score, survival_time, deaths, difficulty_level
+  action_size: 3  # 0: harder, 1: easier, 2: no change
+  reward_scale: 1.0

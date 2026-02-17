@@ -17,6 +17,9 @@ WHITE = (255, 255, 255)
 
 class SnakeGame:
     def __init__(self):
+        pygame.init()
+        pygame.font.init()  # Add this line
+        self.font = pygame.font.SysFont("arial", 25)
         self.display = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption("Snake Game - Baseline")
         self.clock = pygame.time.Clock()
